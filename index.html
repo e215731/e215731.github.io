@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta name="generator" content="Hugo 0.119.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My New Hugo Site</title>
+</head>
+<body>
+    
+<h1>現在の日付と時刻を表示するアプリ（Hugo版）</h1>
+<button onclick="getCurrentDateTime()">現在の日付と時刻を取得</button>
+<p id="datetime"></p>
+
+    <script>
+        function getCurrentDateTime() {
+            const currentDateTime = new Date().toLocaleString();
+            document.getElementById('datetime').innerText = currentDateTime;
+        }
+    </script>
+</body>
+</html>
